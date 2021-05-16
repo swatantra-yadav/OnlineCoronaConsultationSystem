@@ -17,10 +17,10 @@ public class EmployeeController {
 	@Autowired
 	private EmployeeMasterImpl employeeMasterImpl;
 	@PutMapping("/")
-public ResponseEntity<Boolean> createEmployeeV1(@RequestBody Employee employee) {
+public ResponseEntity<String> createEmployeeV1(@RequestBody Employee employee) {
 		
 		employeeMasterImpl.createEmployee(employee);
-		return new ResponseEntity<>(true, HttpStatus.OK);
+		return new ResponseEntity<>("Employee Created", HttpStatus.OK);
 	}
 
 }
