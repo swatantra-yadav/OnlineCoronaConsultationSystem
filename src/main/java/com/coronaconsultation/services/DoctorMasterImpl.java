@@ -18,4 +18,16 @@ public boolean createDoctor(Doctor doctor) {
 	return true;
 }
 
+@Override
+public boolean updateDoctor(Doctor doctor) {
+	// TODO Auto-generated method stub
+	return false;
+}
+
+@Override
+public boolean deleteDoctor(Doctor Doctor) {
+	// TODO Auto-generated method stub
+	return false;
+}
+
 }
