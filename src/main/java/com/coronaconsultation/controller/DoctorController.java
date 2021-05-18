@@ -19,7 +19,7 @@ import com.coronaconsultation.services.DoctorMasterImpl;
 
 import io.swagger.v3.oas.annotations.parameters.RequestBody;
 @RestController
-@RequestMapping("api/Doctor/")
+@RequestMapping("api/doctor/")
 public class DoctorController {
 	@Autowired
 	private DoctorMasterImpl doctorMasterImpl;
@@ -40,6 +40,8 @@ public class DoctorController {
 	
 	@PutMapping("/updateDoctor/updateName/{id}/")
 	public ResponseEntity<String> updateDoctorName(@PathVariable int id, @RequestBody String name){
+		
+		System.out.println("Name Was:: "+name);
 		if(doctorMasterImpl.updateName(id, name)) {
 			return new ResponseEntity<>("Name Updated!!", HttpStatus.OK);
 		}
