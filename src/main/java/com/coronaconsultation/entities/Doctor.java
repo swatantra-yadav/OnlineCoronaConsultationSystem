@@ -17,5 +17,5 @@ public class Doctor {
 	private String specialization;
 	private String email;
 	private String mobile;
-	private String gender;
+	private Gender gender;
 }

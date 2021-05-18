@@ -21,7 +21,8 @@ private String name;
 private String designation;
 private String email;
 private String mobile;
-private String gender;
+private Gender gender;
+private String address;
 //@ManyToOne
 //@JoinColumn(name = "department_id", referencedColumnName = "id")
 //private Department department;
